@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import flyonui from "flyonui";
 import colors from "tailwindcss/colors";
 export default {
   content: [
