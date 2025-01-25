@@ -1,0 +1,48 @@
+---
+import ReviewsItem from './ReviewsItem.astro';
+
+type Review = {
+    content: string;
+    author: string;
+};
+
+const reviews: Review[] = [
+    {
+        content:
+            '"Hello all you home owners in need of roof replacement or repairs. Do yourself a favor & give A & M roofing a call . I am super pleased with both the quality of work & the thorough clean up after completion. These guys have this Roofing thing down to a science. I recommend them to neighbors & friends. So that tells you my satisfaction rating. Great Job A & M. Keep up the good work.! God Bless you folks.👍"',
+        author: 'Kim P. Mcgowan',
+    },
+    {
+        content:
+            '"After calling around looking to find a reputable roofer. I had several to come out and give me an estimate. I was really concerned about the reputation that many roofer have. Most charge lots of money up front and they do subpar work. When AM Roofing came out to my place their prices was very satisfactory and they did not ask for any money up front to begin the job. I was a little hesitant because of this but I could not beat their prices and decided to give them the job. They did an amazing job and I would recommend them to any one who is looking for superior work and may have the same concerns that I had. Thank you AM Roofing for making me smile and for saving me tons of money."',
+        author: 'Jennifer Winfrey',
+    },
+    {
+        content:
+            '​"AM Roofing is one of the best companies to work with have had them do many roofs for my customers and they stand behind their work! Highly recommend!"',
+        author: 'Ozark Nunez',
+    },
+];
+---
+
+<section
+    class='mx-auto w-full gap-4 bg-[#336079] px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 md:py-14 lg:px-8 2xl:max-w-full'
+>
+    <div class='flex flex-col items-center space-y-16'>
+        <h1 class='font-semibold text-neutral-300 md:text-5xl'>
+            Customer Reviews
+        </h1>
+        <div class='grid grid-cols-3 gap-16 px-10'>
+            {
+                reviews.map((review) => (
+                    <div class='rounded-md'>
+                        <ReviewsItem
+                            content={review.content}
+                            author={review.author}
+                        />
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
