@@ -9,14 +9,14 @@ import {
 const InteractiveCarousel = () => {
   return (
     <Carousel
-      className="relative w-3/4"
+      className="relative px-10 md:w-3/4"
       opts={{
         loop: true,
       }}
     >
       <CarouselContent>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_6954.jpeg"
@@ -25,7 +25,7 @@ const InteractiveCarousel = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_6955.jpeg"
@@ -34,7 +34,7 @@ const InteractiveCarousel = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_6956.jpeg"
@@ -43,7 +43,7 @@ const InteractiveCarousel = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_7082.jpeg"
@@ -52,7 +52,7 @@ const InteractiveCarousel = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_7110.jpeg"
@@ -62,7 +62,7 @@ const InteractiveCarousel = () => {
         </CarouselItem>
 
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_7220.jpeg"
@@ -71,7 +71,7 @@ const InteractiveCarousel = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_7207.jpeg"
@@ -80,7 +80,7 @@ const InteractiveCarousel = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_7236.jpeg"
@@ -89,7 +89,7 @@ const InteractiveCarousel = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_7388.jpeg"
@@ -98,7 +98,7 @@ const InteractiveCarousel = () => {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="flex h-[600px]">
+          <div className="flex md:h-[600px]">
             <img
               className="h-full w-full rounded-xl object-cover object-center"
               src="/techo_7514.jpeg"

@@ -5,17 +5,22 @@ import roof_replace from 'src/components/sections/services/icons/cambio_techo.sv
 ---
 
 <section
-    class='mx-auto w-full gap-4 bg-neutral-200 px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 md:py-14 lg:px-8 2xl:max-w-full'
+    class='mx-auto w-full gap-4 bg-neutral-200 px-4 pt-20 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 md:py-14 lg:px-8 2xl:max-w-full'
     id='services'
 >
-    <div class='flex flex-col items-center space-y-16'>
-        <h1 class='font-semibold text-neutral-700 md:text-5xl'>
+    <div class='flex flex-col items-center space-y-6 md:space-y-16'>
+        <h1 class='text-3xl font-semibold text-neutral-700 md:text-5xl'>
             Roofing Services
         </h1>
         <div
-            class='grid grid-cols-3 grid-rows-2 gap-24 align-middle text-xl font-semibold'
+            class='text-md flex grid-cols-3 grid-rows-2 flex-col space-y-8 align-middle font-semibold md:grid md:gap-24 md:text-xl'
         >
             <div class='space-y-6 p-4 text-center text-neutral-700'>
+                <Image
+                    src={roof_replace}
+                    alt='Roof Replacement Icon'
+                    class='mx-auto h-32 w-32'
+                />
                 <p>Storm Damage</p>
             </div>
             <div class='space-y-6 p-4 text-center text-neutral-700'>
@@ -35,9 +40,19 @@ import roof_replace from 'src/components/sections/services/icons/cambio_techo.sv
                 <p>Roof Replacement</p>
             </div>
             <div class='space-y-6 p-4 text-center text-neutral-700'>
+                <Image
+                    src={roof_replace}
+                    alt='Roof Replacement Icon'
+                    class='mx-auto h-32 w-32'
+                />
                 <p>Gutters & Gutter Screens</p>
             </div>
             <div class='space-y-6 p-4 text-center text-neutral-700'>
+                <Image
+                    src={roof_replace}
+                    alt='Roof Replacement Icon'
+                    class='mx-auto h-32 w-32'
+                />
                 <p>Siding</p>
             </div>
             <div class='space-y-6 p-4 text-center text-neutral-700'></div>
