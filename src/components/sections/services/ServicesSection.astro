@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import leak from 'src/components/sections/services/icons/GOTERA.svg';
+import roof_replace from 'src/components/sections/services/icons/cambio_techo.svg';
+---
+
+<section
+    class='mx-auto w-full gap-4 px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 md:py-14 lg:px-8 2xl:max-w-full'
+>
+    <div class='flex flex-col items-center space-y-16'>
+        <h1 class='font-semibold text-neutral-700 md:text-5xl'>
+            Roofing Services
+        </h1>
+        <div
+            class='grid grid-cols-3 grid-rows-2 gap-24 align-middle text-xl font-semibold'
+        >
+            <div class='space-y-6 p-4 text-center text-neutral-700'>
+                <p>Storm Damage</p>
+            </div>
+            <div class='space-y-6 p-4 text-center text-neutral-700'>
+                <Image
+                    src={leak}
+                    alt='Leaky Roof Icon'
+                    class='mx-auto h-32 w-32'
+                />
+                <p>Leaky Roof Repair</p>
+            </div>
+            <div class='space-y-6 p-4 text-center text-neutral-700'>
+                <Image
+                    src={roof_replace}
+                    alt='Roof Replacement Icon'
+                    class='mx-auto h-32 w-32'
+                />
+                <p>Roof Replacement</p>
+            </div>
+            <div class='space-y-6 p-4 text-center text-neutral-700'>
+                <p>Gutters & Gutter Screens</p>
+            </div>
+            <div class='space-y-6 p-4 text-center text-neutral-700'>
+                <p>Siding</p>
+            </div>
+            <div class='space-y-6 p-4 text-center text-neutral-700'></div>
+        </div>
+    </div>
+</section>
