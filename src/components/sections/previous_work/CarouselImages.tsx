@@ -109,11 +109,11 @@ const InteractiveCarousel = () => {
       </CarouselContent>
       <CarouselPrevious
         variant="default"
-        className="bg-neutral-200 text-neutral-700 hover:bg-neutral-600 hover:text-neutral-200"
+        className="absolute left-1 top-1/2 bg-neutral-200 text-neutral-700 hover:bg-neutral-600 hover:text-neutral-200"
       />
       <CarouselNext
         variant="default"
-        className="bg-neutral-200 text-neutral-700 hover:bg-neutral-600 hover:text-neutral-200"
+        className="absolute right-1 top-1/2 bg-neutral-200 text-neutral-700 hover:bg-neutral-600 hover:text-neutral-200"
       />
     </Carousel>
   );
