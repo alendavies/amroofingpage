@@ -1,7 +1,7 @@
 ---
 import { getImage } from 'astro:assets';
 import { OG, SEO, SITE } from '@data/constants';
-import faviconSrc from 'src/components/sections/navbar&footer/logo.png';
+import faviconSrc from '/logo.png';
 
 // Default properties for the Meta component. These values are used if props are not provided.
 // 'meta' sets a default description meta tag to describe the page content.
@@ -173,7 +173,7 @@ const appleTouchIcon = await getImage({
 
 <!-- Links for favicons -->
 <link
-    href='src/components/sections/navbar&footer/logo.png'
+    href='/logo.png'
     rel='icon'
     sizes='any'
     type='image/x-icon'

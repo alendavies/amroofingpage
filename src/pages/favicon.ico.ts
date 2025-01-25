@@ -3,9 +3,7 @@ import sharp from "sharp";
 import ico from "sharp-ico";
 import path from "node:path";
 
-const faviconSrc = path.resolve(
-  "src/components/sections/navbar&footer/logo.png",
-);
+const faviconSrc = path.resolve("/logo.png");
 
 export const GET: APIRoute = async () => {
   // Resize the image to multiple sizes

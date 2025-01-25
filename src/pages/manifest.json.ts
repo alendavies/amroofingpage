@@ -1,6 +1,6 @@
 import type { APIRoute, ImageMetadata } from "astro";
 import { getImage } from "astro:assets";
-import icon from "src/components/sections/navbar&footer/logo.png";
+import icon from "/logo.png";
 
 interface Favicon {
   purpose: "any" | "maskable" | "monochrome";
