@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
@@ -11,6 +10,8 @@ import netlify from "@astrojs/netlify";
 
 import icon from "astro-icon";
 
+import react from "@astrojs/react";
+
 export default defineConfig({
   site: "https://amroofing.netlify.app/",
   base: "/", // Use '/' for root, or '/your-subdir/' if deploying to a subdirectory
@@ -20,12 +21,11 @@ export default defineConfig({
   },
 
   prefetch: true,
-  vite: {
-    plugins: [tailwindcss()],
-  },
 
   integrations: [
-    tailwind(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
     sitemap({
       i18n: {
         defaultLocale: "en",
@@ -87,6 +87,7 @@ export default defineConfig({
     }),
     mdx(),
     icon(),
+    react(),
   ],
 
   experimental: {

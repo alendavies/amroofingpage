@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import colors from "tailwindcss/colors";
 export default {
+  darkMode: ["class"],
   content: [
     "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
     "./node_modules/preline/preline.js",
@@ -8,24 +9,57 @@ export default {
     "../path/to/raty-js/**/*.js",
   ],
   theme: {
-    colors: {
-      blue: "#3b769b",
-      dark: "#336079",
-      transparent: "transparent",
-      current: "currentColor",
-      black: "#000000",
-      white: "#ffffff",
-      gray: colors.gray,
-      indigo: colors.indigo,
-      neutral: colors.neutral, // Used mainly for text color
-      yellow: colors.yellow,
-      orange: colors.orange, // Primary colors, used mainly for links, buttons and svg icons
-      red: colors.red, // Used for bookmark icon
-      zinc: colors.zinc, // Used mainly for box-shadow
-      sky: colors.sky, // Used for background color
-      amber: colors.amber, // Used for hover effect
+    extend: {
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      colors: {
+        blue: "#3b769b",
+        dark: "#336079",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        chart: {
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
+        },
+      },
     },
-    extend: {},
   },
   flyonui: {
     themes: ["corporate"],
@@ -36,5 +70,6 @@ export default {
     require("@tailwindcss/forms"),
     require("flyonui"),
     require("flyonui/plugin"),
+    require("tailwindcss-animate"),
   ],
 };
