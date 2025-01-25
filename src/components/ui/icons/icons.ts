@@ -342,7 +342,7 @@ export const Icons = {
       },
     ],
     class:
-      "absolute start-0 top-0 h-16 w-16 -translate-x-6 -translate-y-8 transform text-neutral-300 dark:text-neutral-700",
+      "absolute start-0 top-0 h-16 w-16 -translate-x-6 -translate-y-8 transform text-neutral-700 dark:text-neutral-700",
     width: 16,
     height: 16,
     viewBox: "0 0 16 16",
@@ -513,6 +513,20 @@ export const Icons = {
     paths: [
       {
         d: "m19.5 8.25-7.5 7.5-7.5-7.5",
+      },
+    ],
+    class: "ms-2 size-4 flex-shrink-0",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+  clock: {
+    paths: [
+      {
+        d: "M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10",
       },
     ],
     class: "ms-2 size-4 flex-shrink-0",
