@@ -12,6 +12,7 @@ import icon from "astro-icon";
 
 export default defineConfig({
   site: "https://AMRoofing.com",
+  base: "/", // Use '/' for root, or '/your-subdir/' if deploying to a subdirectory
 
   image: {
     domains: ["images.unsplash.com"],
