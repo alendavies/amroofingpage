@@ -1,94 +1,76 @@
 ---
 // Import the necessary dependencies
-import { Image } from "astro:assets";
-import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
-import SecondaryCTA from "@components/ui/buttons/SecondaryCTA.astro";
-import ReviewComponent from "@components/ui/blocks/ReviewComponent.astro";
+import { Image } from 'astro:assets';
+import PrimaryCTA from '@components/ui/buttons/PrimaryCTA.astro';
+import gaf from 'src/images/GAF-certified-400-293x300-removebg-preview.png';
 
 // Define props from Astro
-const {
-  title,
-  subTitle,
-  primaryBtn,
-  primaryBtnURL,
-  secondaryBtn,
-  secondaryBtnURL,
-  withReview,
-  avatars,
-  starCount,
-  rating,
-  reviews,
-  src,
-  alt
-} = Astro.props;
+const { title, primaryBtn, primaryBtnURL } = Astro.props;
 
 // Define TypeScript interface for props
 interface Props {
-  title: string;
-  subTitle?: string;
-  primaryBtn?: string;
-  primaryBtnURL?: string;
-  secondaryBtn?: string;
-  secondaryBtnURL?: string;
-  withReview?: boolean;
-  avatars?: Array<string>;
-  starCount?: number;
-  rating?: string;
-  reviews?: string;
-  src?: any;
-  alt?: string;
+    title: string;
+    subTitle?: string;
+    primaryBtn?: string;
+    primaryBtnURL?: string;
+    secondaryBtn?: string;
+    secondaryBtnURL?: string;
+    withReview?: boolean;
+    avatars?: Array<string>;
+    starCount?: number;
+    rating?: string;
+    reviews?: string;
+    src?: any;
+    alt?: string;
 }
 ---
 
 <!-- Defining a grid container that holds all the content -->
 <section
-  class="mx-auto grid max-w-[85rem] gap-4 px-4 py-14 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 lg:px-8 2xl:max-w-full"
+    class='hero relative mx-auto grid h-screen w-screen gap-4 overflow-hidden bg-[url(../src/images/hero-image.avif)] bg-cover bg-center px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 md:py-14 lg:px-8 2xl:max-w-full'
 >
-  <!-- Title and description -->
-  <div>
-    <!-- Each h1 and p tag renders a portion of the title and subTitle defined above -->
-    <h1
-      class="block text-balance text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-4xl lg:text-6xl lg:leading-tight"
+    <div class='absolute inset-0 h-screen w-screen bg-black bg-opacity-30'>
+    </div>
+    <div
+        class='bg-green-600 absolute bottom-[80px] right-[-60px] flex h-[50px] w-[385px] -rotate-[40deg] transform items-center justify-center bg-yellow-600 py-1 text-center font-semibold text-neutral-100 drop-shadow-md md:text-lg'
     >
-      <!-- About Fragment: https://docs.astro.build/en/basics/astro-syntax/#fragments -->
-      <Fragment set:html={title} />
-    </h1>
-    {subTitle &&
-    <p
-      class="mt-3 text-pretty text-lg leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5"
-    >
-      {subTitle}
-    </p>
-  }
-    <!-- Action Button Section: This section includes two CTAs with their own styles and URL -->
-    <div class="mt-7 grid w-full gap-3 sm:inline-flex">
-      {primaryBtn && 
-      <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />
-      }
-      {secondaryBtn && 
-      <SecondaryCTA title={secondaryBtn} url={secondaryBtnURL} />
-      }
+        <p class='uppercase'>We work with insurances</p>
     </div>
 
-    <!-- Review Section: This section presents avatars, review ratings and the number of reviews -->
-    { withReview ? (
-    <ReviewComponent avatars={avatars} starCount={starCount} rating={rating} reviews={reviews} />
-    ) : "" }
-
-  </div>
-  <!-- Hero Image Section -->
-  <div class="flex w-full">
-      <div class="top-12 overflow-hidden">
-	{src && alt &&
-	<Image
-        src={src}
-        alt={alt}
-        class="h-full w-full scale-110 object-cover object-center"
-        draggable={"false"}
-        loading={"eager"}
-        format={"avif"}
-	 />
-	}
+    <!-- Title and description -->
+    <div
+        class='relative flex h-screen w-screen grid-cols-2 justify-between gap-10 px-10 md:grid'
+    >
+        <!-- Each h1 and p tag renders a portion of the title and subTitle defined above -->
+        <div class='col-span-1 space-y-20 pt-20 md:space-y-12'>
+            <h1
+                class='block text-balance text-3xl font-bold tracking-tight text-neutral-200 dark:text-neutral-200 sm:text-4xl lg:text-6xl lg:leading-tight'
+            >
+                <!-- About Fragment: https://docs.astro.build/en/basics/astro-syntax/#fragments -->
+                <Fragment set:html={title} />
+            </h1>
+            <!-- Action Button Section: This section includes two CTAs with their own styles and URL -->
+            <div class='mt-7 w-full gap-3 sm:inline-flex'>
+                {
+                    primaryBtn && (
+                        <PrimaryCTA
+                            title={primaryBtn}
+                            url={primaryBtnURL}
+                        />
+                    )
+                }
+            </div>
+        </div>
+        <a
+            href='../src/images/GAF_Certificate.pdf'
+            target='_blank'
+            class='col-span-1 justify-self-end md:pr-20'
+        >
+            <Image
+                alt='gaf certificate'
+                src={gaf}
+                class='absolute right-24 md:h-40 md:w-40'
+            />
+        </a>
     </div>
-  </div>
 </section>
