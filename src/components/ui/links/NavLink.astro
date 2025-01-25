@@ -13,13 +13,13 @@ interface Props {
 Re-usable link component for navigation bar. Highlights the active link
 by comparing the current URL with the href of each link.
 We assign an ID matching the URL for easy reference in our script.
-If URL is '/' (home page), assign ID as 'home' 
+If URL is '/' (home page), assign ID as 'home'
 -->
 <a
-  id={url === "/" ? "home" : url.replace("/", "")}
+  id={url === "/" ? "HOME" : url.replace("/", "")}
   href={url}
   data-astro-prefetch
-  class="rounded-lg text-base font-medium text-neutral-600 outline-none ring-zinc-500 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-500 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"
+  class="rounded-lg text-base font-semibold text-neutral-600 outline-none ring-zinc-500 hover:text-sky-600 focus-visible:ring uppercase dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-sky-600 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"
 >
   {name}
 </a>
