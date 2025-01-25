@@ -11,11 +11,11 @@ import netlify from "@astrojs/netlify";
 import icon from "astro-icon";
 
 export default defineConfig({
-  site: "https://AMRoofing.com",
+  site: "https://amroofing.netlify.app/",
   base: "/", // Use '/' for root, or '/your-subdir/' if deploying to a subdirectory
 
   image: {
-    domains: ["images.unsplash.com"],
+    domains: ["self"],
   },
 
   prefetch: true,
