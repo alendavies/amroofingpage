@@ -3,6 +3,7 @@
   publish = "dist"
 
 [[headers]]
-  for = "/*"
+  for = "/*.js"
   [headers.values]
     Content-Security-Policy = "img-src 'self' data:"
+    Content-Type = "application/javascript"
