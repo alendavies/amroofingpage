@@ -4,6 +4,7 @@ import Meta from '@components/Meta.astro';
 import Navbar from '@components/sections/navbar&footer/Navbar.astro';
 import FooterSection from '@components/sections/navbar&footer/FooterSection.astro';
 import { SITE } from '@data/constants';
+import '../assets/app.css';
 
 // Setting expected props
 const { title = SITE.title, meta, structuredData, lang = 'en' } = Astro.props;
@@ -37,6 +38,8 @@ We set the language of the page to English and add classes for scrollbar and scr
         <script>
             import '@scripts/lenisSmoothScroll.js';
         </script>
+
+        <script src='../node_modules/flyonui/flyonui.js'></script>
     </head>
     <body
         class='bg-neutral-200 selection:bg-neutral-400 selection:text-neutral-700'
@@ -64,6 +67,5 @@ We set the language of the page to English and add classes for scrollbar and scr
                 scrollbar-width: none;
             }
         </style>
-        <script src='../node_modules/flyonui/flyonui.js'></script>
     </body>
 </html>
