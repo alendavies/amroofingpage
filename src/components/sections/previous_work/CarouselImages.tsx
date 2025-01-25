@@ -6,18 +6,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import techo1 from "/techo_6954.jpeg";
-import techo2 from "/techo_6955.jpeg";
-import techo3 from "/techo_6956.jpeg";
-import techo4 from "/techo_7082.jpeg";
-import techo5 from "/techo_7110.jpeg";
-import techo6 from "/techo_7220.jpeg";
-import techo7 from "/techo_7207.jpeg";
-import techo8 from "/techo_7236.jpeg";
-import techo9 from "/techo_7388.jpeg";
-import techo10 from "/techo_7514.jpeg";
-import { Image } from "astro:assets";
-
 const InteractiveCarousel = () => {
   return (
     <Carousel
@@ -29,45 +17,45 @@ const InteractiveCarousel = () => {
       <CarouselContent>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo1}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_6954.jpeg"
               alt=""
             />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo2}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_6955.jpeg"
               alt=""
             />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo3}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_6956.jpeg"
               alt=""
             />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo4}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_7082.jpeg"
               alt=""
             />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo5}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_7110.jpeg"
               alt=""
             />
           </div>
@@ -75,45 +63,45 @@ const InteractiveCarousel = () => {
 
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo7}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_7220.jpeg"
               alt=""
             />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo6}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_7207.jpeg"
               alt=""
             />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo8}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_7236.jpeg"
               alt=""
             />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo9}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_7388.jpeg"
               alt=""
             />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="flex h-[600px]">
-            <Image
-              class="h-full w-full rounded-xl object-cover object-center"
-              src={techo10}
+            <img
+              className="h-full w-full rounded-xl object-cover object-center"
+              src="/techo_7514.jpeg"
               alt=""
             />
           </div>
