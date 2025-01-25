@@ -9,11 +9,6 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {
-      backgroundImage: {
-        "hero-pattern": "url('src/images/hero-image.avif')",
-      },
-    },
     colors: {
       blue: "#3b769b",
       dark: "#336079",

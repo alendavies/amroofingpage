@@ -6,7 +6,7 @@ import 'html-escaper';
 import { A as AstroError, R as ResponseSentError, F as ForbiddenRewrite } from './chunks/astro/server_B0kk_S5A.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { u as useTranslations } from './chunks/translations_ByL9jSRd.mjs';
+import { u as useTranslations } from './chunks/translations_DF3_Kp9-.mjs';
 
 const DELETED_EXPIRATION = /* @__PURE__ */ new Date(0);
 const DELETED_VALUE = "deleted";
