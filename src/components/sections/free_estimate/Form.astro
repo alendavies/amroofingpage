@@ -1,288 +1,235 @@
-<div class='w-full rounded-lg bg-neutral-200 text-neutral-700 shadow-md'>
-    <div class='w-full p-4'>
-        <form
-            class='peer grid gap-y-4'
-            action='https://formspree.io/f/xrbebogy'
-            method='POST'
-            target='_blank'
-            data-formspree='true'
-            accept-charset='UTF-8'
-            id='contact-form'
-        >
-            <div class='grid grid-cols-1 gap-6 md:grid-cols-2'>
-                <div>
-                    <label
-                        class='label label-text font-semibold text-neutral-700'
-                        for='firstName'
-                        >First Name
-                    </label>
-                    <input
-                        id='firstName'
-                        name='First Name'
-                        type='text'
-                        placeholder='John'
-                        class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                        required
-                    />
-                    <span class='error-message'>Please enter your name.</span>
-                    <span class='success-message'>Looks good!</span>
-                </div>
-                <div>
-                    <label
-                        class='label label-text font-semibold text-neutral-700'
-                        for='lastName'
-                        >Last Name</label
-                    >
-                    <input
-                        id='lastName'
-                        name='Last Name'
-                        type='text'
-                        placeholder='Doe'
-                        class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                        required
-                    />
-                    <span class='error-message'
-                        >Please enter your last name.</span
-                    >
-                    <span class='success-message'>Looks good!</span>
-                </div>
-            </div>
-            <div class='grid grid-cols-1 gap-6 md:grid-cols-2'>
-                <div>
-                    <label
-                        class='label label-text font-semibold text-neutral-700'
-                        for='userEmail'
-                        >Email</label
-                    >
-                    <input
-                        id='userEmail'
-                        type='email'
-                        name='Email'
-                        class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                        placeholder='john@gmail.com'
-                        aria-label='john@gmail.com'
-                        required=''
-                    />
-                    <span class='error-message'>Please enter a valid email</span
-                    >
-                    <span class='success-message'>Looks good!</span>
-                </div>
-                <div>
-                    <label
-                        class='label label-text font-semibold text-neutral-700'
-                        for='userPhone'
-                        >Phone Number</label
-                    >
-                    <div
-                        class='input-group border-neutral-500 bg-neutral-200 text-neutral-700'
-                    >
-                        <input
-                            id='userPhone'
-                            name='Phone Number'
-                            type='tel'
-                            class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                            placeholder='(555) 555-5555'
-                            required
-                        />
-                    </div>
-                    <span class='error-message'>
-                        Please enter a valid phone number
-                    </span>
-                    <span class='success-message'>Looks good!</span>
-                </div>
-            </div>
-
-            <div>
-                <label
-                    class='label label-text font-semibold text-neutral-700'
-                    for='userAddress'
-                    >Address</label
-                >
-                <input
-                    id='userAddress'
-                    type='text'
-                    name='Address'
-                    class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                    required
-                    placeholder='1234 Main St'
-                />
-                <span class='error-message'>Please enter an address</span>
-                <span class='success-message'>Looks good!</span>
-            </div>
-
-            <div class='grid grid-cols-1 gap-6 md:grid-cols-3'>
-                <div>
-                    <label
-                        class='label label-text font-semibold text-neutral-700'
-                        for='city'
-                        >City
-                    </label>
-                    <input
-                        id='city'
-                        name='City'
-                        type='text'
-                        placeholder='Springfield'
-                        class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                        required
-                    />
-                    <span class='error-message'>Please enter your city.</span>
-                    <span class='success-message'>Looks good!</span>
-                </div>
-                <div>
-                    <label
-                        class='label label-text font-semibold text-neutral-700'
-                        for='state'
-                        >State</label
-                    >
-                    <input
-                        id='state'
-                        type='text'
-                        name='State'
-                        placeholder='MO'
-                        class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                        required
-                    />
-                    <span class='error-message'
-                        >Please enter your last name.</span
-                    >
-                    <span class='success-message'>Looks good!</span>
-                </div>
-                <div>
-                    <label
-                        class='label label-text font-semibold text-neutral-700'
-                        for='zipCode'
-                        >Zip Code</label
-                    >
-                    <input
-                        id='zipCode'
-                        type='text'
-                        name='Zip Code'
-                        placeholder='65806'
-                        class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400 focus:border-blue'
-                        required
-                    />
-                    <span class='error-message'
-                        >Please enter your last name.</span
-                    >
-                    <span class='success-message'>Looks good!</span>
-                </div>
-            </div>
-
-            <div>
-                <label
-                    class='label label-text font-semibold'
-                    for='userPreferredDay'
-                    >Preferred Day</label
-                >
-                <select
-                    class='select border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                    id='userPreferredDay'
-                    aria-label='Select Preferred Day'
-                    required
-                    name='Preferred Day'
-                >
-                    <option value=''> Select a day </option>
-                    <option value='Any'>Any</option>
-                    <option value='Monday'>Monday</option>
-                    <option value='Tuesday'>Tuesday</option>
-                    <option value='Wednesday'>Wednesday</option>
-                    <option value='Thursday'>Thursday</option>
-                    <option value='Friday'>Friday</option>
-                </select>
-                <span class='error-message'>
-                    Please select your preferred day
-                </span>
-                <span class='success-message'>Looks good!</span>
-            </div>
-
-            <div>
-                <label
-                    class='label label-text font-semibold'
-                    for='userPreferredTime'
-                    >Preferred Time Of Day</label
-                >
-                <select
-                    class='select border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                    id='userPreferredTime'
-                    aria-label='Select Preferred Time'
-                    name='Preferred Time Of Day'
-                >
-                    <option value=''> Select a time of day </option>
-                    <option value='Any'>Any</option>
-                    <option value='Morning'>Morning</option>
-                    <option value='Afternoon'>Afternoon</option>
-                </select>
-                <span class='error-message'>
-                    Please select your preferred time of day
-                </span>
-                <span class='success-message'>Looks good!</span>
-            </div>
-
-            <div class='w-full'>
-                <label
-                    class='label label-text font-semibold text-neutral-700'
-                    for='userRequest'
-                    >Describe the reason for your request</label
-                >
-                <textarea
-                    class='textarea min-h-20 resize-none border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
-                    id='userRequest'
-                    placeholder='I would like to request an estimate for...'
-                    required=''
-                    name='Request Description'
-                ></textarea>
-                <span class='error-message'>Please write few words</span>
-                <span class='success-message'>Looks good!</span>
-            </div>
-            <!-- Submit button -->
-            <div class='mt-4 flex items-center justify-center'>
-                <button
-                    type='submit'
-                    name='submitButton'
-                    class='btn btn-primary w-1/2 border-none bg-blue font-semibold text-neutral-200 hover:bg-dark'
-                    >Submit</button
-                >
-            </div>
-        </form>
+<form
+    class='grid gap-y-4'
+    action='https://formspree.io/f/xrbebogy'
+    method='POST'
+    target='_blank'
+    data-formspree='true'
+    accept-charset='UTF-8'
+    id='contact-form'
+>
+    <div class='grid grid-cols-1 gap-6 md:grid-cols-2'>
+        <div>
+            <label
+                class='label label-text font-semibold text-neutral-700'
+                for='firstName'
+                >First Name
+            </label>
+            <input
+                id='firstName'
+                name='First Name'
+                type='text'
+                placeholder='John'
+                class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+                required
+            />
+            <span class='error-message'>Please enter your name.</span>
+            <span class='success-message'>Looks good!</span>
+        </div>
+        <div>
+            <label
+                class='label label-text font-semibold text-neutral-700'
+                for='lastName'
+                >Last Name</label
+            >
+            <input
+                id='lastName'
+                name='Last Name'
+                type='text'
+                placeholder='Doe'
+                class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+                required
+            />
+            <span class='error-message'>Please enter your last name.</span>
+            <span class='success-message'>Looks good!</span>
+        </div>
     </div>
-</div>
+    <div class='grid grid-cols-1 gap-6 md:grid-cols-2'>
+        <div>
+            <label
+                class='label label-text font-semibold text-neutral-700'
+                for='userEmail'
+                >Email</label
+            >
+            <input
+                id='userEmail'
+                type='email'
+                name='Email'
+                class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+                placeholder='john@gmail.com'
+                aria-label='john@gmail.com'
+                required=''
+            />
+            <span class='error-message'>Please enter a valid email</span>
+            <span class='success-message'>Looks good!</span>
+        </div>
+        <div>
+            <label
+                class='label label-text font-semibold text-neutral-700'
+                for='userPhone'
+                >Phone Number</label
+            >
+            <div
+                class='input-group border-neutral-500 bg-neutral-200 text-neutral-700'
+            >
+                <input
+                    id='userPhone'
+                    name='Phone Number'
+                    type='tel'
+                    class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+                    placeholder='(555) 555-5555'
+                    required
+                />
+            </div>
+            <span class='error-message'>
+                Please enter a valid phone number
+            </span>
+            <span class='success-message'>Looks good!</span>
+        </div>
+    </div>
 
-<!-- <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Fetch all the forms we want to apply custom validation styles to
-        const forms = document.querySelectorAll('.needs-validation');
+    <div>
+        <label
+            class='label label-text font-semibold text-neutral-700'
+            for='userAddress'
+            >Address</label
+        >
+        <input
+            id='userAddress'
+            type='text'
+            name='Address'
+            class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+            required
+            placeholder='1234 Main St'
+        />
+        <span class='error-message'>Please enter an address</span>
+        <span class='success-message'>Looks good!</span>
+    </div>
 
-        // Loop over them and prevent submission if invalid
-        Array.from(forms).forEach((form) => {
-            form.addEventListener(
-                'submit',
-                function (event) {
-                    // TypeScript casting to HTMLFormElement to use checkValidity
-                    const htmlForm = form as HTMLFormElement;
+    <div class='grid grid-cols-1 gap-6 md:grid-cols-3'>
+        <div>
+            <label
+                class='label label-text font-semibold text-neutral-700'
+                for='city'
+                >City
+            </label>
+            <input
+                id='city'
+                name='City'
+                type='text'
+                placeholder='Springfield'
+                class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+                required
+            />
+            <span class='error-message'>Please enter your city.</span>
+            <span class='success-message'>Looks good!</span>
+        </div>
+        <div>
+            <label
+                class='label label-text font-semibold text-neutral-700'
+                for='state'
+                >State</label
+            >
+            <input
+                id='state'
+                type='text'
+                name='State'
+                placeholder='MO'
+                class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+                required
+            />
+            <span class='error-message'>Please enter your last name.</span>
+            <span class='success-message'>Looks good!</span>
+        </div>
+        <div>
+            <label
+                class='label label-text font-semibold text-neutral-700'
+                for='zipCode'
+                >Zip Code</label
+            >
+            <input
+                id='zipCode'
+                type='text'
+                name='Zip Code'
+                placeholder='65806'
+                class='input border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400 focus:border-blue'
+                required
+            />
+            <span class='error-message'>Please enter your last name.</span>
+            <span class='success-message'>Looks good!</span>
+        </div>
+    </div>
 
-                    // Check if the form is valid
-                    if (!htmlForm.checkValidity()) {
-                        event.preventDefault(); // Prevent form submission
-                        event.stopPropagation(); // Stop further event propagation
+    <div>
+        <label
+            class='label label-text font-semibold'
+            for='userPreferredDay'
+            >Preferred Day</label
+        >
+        <select
+            class='select border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+            id='userPreferredDay'
+            aria-label='Select Preferred Day'
+            required
+            name='Preferred Day'
+        >
+            <option value=''> Select a day </option>
+            <option value='Any'>Any</option>
+            <option value='Monday'>Monday</option>
+            <option value='Tuesday'>Tuesday</option>
+            <option value='Wednesday'>Wednesday</option>
+            <option value='Thursday'>Thursday</option>
+            <option value='Friday'>Friday</option>
+        </select>
+        <span class='error-message'> Please select your preferred day </span>
+        <span class='success-message'>Looks good!</span>
+    </div>
 
-                        // Find the first invalid input field
-                        const firstInvalidElement =
-                            form.querySelector(':invalid');
+    <div>
+        <label
+            class='label label-text font-semibold'
+            for='userPreferredTime'
+            >Preferred Time Of Day</label
+        >
+        <select
+            class='select border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+            id='userPreferredTime'
+            aria-label='Select Preferred Time'
+            name='Preferred Time Of Day'
+        >
+            <option value=''> Select a time of day </option>
+            <option value='Any'>Any</option>
+            <option value='Morning'>Morning</option>
+            <option value='Afternoon'>Afternoon</option>
+        </select>
+        <span class='error-message'>
+            Please select your preferred time of day
+        </span>
+        <span class='success-message'>Looks good!</span>
+    </div>
 
-                        // Check if the invalid element exists and is focusable (i.e., an input, select, or textarea)
-                        if (
-                            firstInvalidElement &&
-                            firstInvalidElement instanceof HTMLElement
-                        ) {
-                            firstInvalidElement.focus(); // Focus the first invalid input
-                        }
-                    }
-
-                    // After validation (whether valid or not), add the 'validate' class to apply styles
-                    htmlForm.classList.add('validate');
-                },
-                false
-            );
-        });
-    });
-</script> -->
+    <div class='w-full'>
+        <label
+            class='label label-text font-semibold text-neutral-700'
+            for='userRequest'
+            >Describe the reason for your request</label
+        >
+        <textarea
+            class='textarea min-h-20 resize-none border-neutral-500 bg-neutral-200 text-neutral-700 placeholder:text-neutral-400'
+            id='userRequest'
+            placeholder='I would like to request an estimate for...'
+            required=''
+            name='Request Description'
+        ></textarea>
+        <span class='error-message'>Please write few words</span>
+        <span class='success-message'>Looks good!</span>
+    </div>
+    <!-- Submit button -->
+    <div class='mt-4 flex items-center justify-center'>
+        <button
+            type='submit'
+            name='submitButton'
+            class='btn btn-primary w-1/2 border-none bg-blue font-semibold text-neutral-200 hover:bg-dark'
+            >Submit</button
+        >
+    </div>
+</form>
