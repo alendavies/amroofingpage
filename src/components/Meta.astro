@@ -1,14 +1,12 @@
 ---
 import { getImage } from "astro:assets";
 import { OG, SEO, SITE } from "@data/constants";
-import faviconSvgSrc from "@images/icon.svg";
-import faviconSrc from "@images/icon.png";
+import faviconSrc from "@images/logo.png";
 
 // Default properties for the Meta component. These values are used if props are not provided.
 // 'meta' sets a default description meta tag to describe the page content.
 // 'structuredData' defines default structured data in JSON-LD format to enhance search engine understanding of the page (for SEO purposes).
 const defaultProps = {
-  meta: SITE.description,
   structuredData: SEO.structuredData,
 };
 
@@ -16,7 +14,6 @@ const defaultProps = {
 // For example:
 // <MainLayout title="Custom Title" meta="Custom description." />
 const {
-  meta = defaultProps.meta,
   structuredData = defaultProps.structuredData,
 } = Astro.props;
 
@@ -60,11 +57,7 @@ const alternateLanguageLinks: string = Object.entries(languages)
   })
   .join("\n");
 
-// Generate and optimize the favicon images
-const faviconSvg = await getImage({
-  src: faviconSvgSrc,
-  format: "svg",
-});
+
 
 const appleTouchIcon = await getImage({
   src: faviconSrc,
@@ -85,7 +78,6 @@ const appleTouchIcon = await getImage({
 }
 <!-- Define the character set, description, author, and viewport settings -->
 <meta charset="utf-8" />
-<meta content={meta} name="description" />
 <meta name="web_author" content={author} />
 <meta
   name="viewport"
@@ -121,8 +113,7 @@ const appleTouchIcon = await getImage({
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 <!-- Links for favicons -->
-<link href="/favicon.ico" rel="icon" sizes="any" type="image/x-icon" />
-<link href={faviconSvg.src} rel="icon" type="image/svg+xml" sizes="any" />
+<link href="src/images/logo.png" rel="icon" sizes="any" type="image/x-icon" />
 <meta name="mobile-web-app-capable" content="yes" />
 <link href={appleTouchIcon.src} rel="apple-touch-icon" />
 <link href={appleTouchIcon.src} rel="shortcut icon" />
