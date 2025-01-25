@@ -1,4 +1,4 @@
-import ogImageSrc from "@images/social.png";
+import ogImageSrc from "public/logo.png";
 
 export const SITE = {
   title: "AM Roofing",
