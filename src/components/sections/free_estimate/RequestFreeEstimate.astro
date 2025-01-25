@@ -7,36 +7,29 @@ const subTitle: string =
     'Fill out the form below to schedule your free estimate!';
 ---
 
-<section class='mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14'>
+<section
+    class='mx-auto max-w-[85rem] bg-neutral-200 px-4 py-10 sm:px-6 lg:px-8 lg:py-14'
+>
     <div class='mx-auto max-w-2xl lg:max-w-5xl'>
         <div class='text-center'>
-            <h1
-                class='text-balance text-2xl font-bold tracking-tight text-neutral-700 dark:text-neutral-200 md:text-4xl md:leading-tight'
-            >
+            <h1 class='font-semibold text-neutral-700 md:text-5xl'>
                 {title}
             </h1>
-            <p class='mt-1 text-pretty text-neutral-600 dark:text-neutral-400'>
-                {subTitle}
-            </p>
         </div>
 
         <div
             class='mt-12 grid items-center gap-6 md:grid-cols-2 lg:grid-cols-2 lg:gap-16'
         >
             <div class='col-span-1 flex flex-col rounded-xl p-4 sm:p-6 lg:p-8'>
-                <h2
-                    class='mb-8 text-xl font-bold text-neutral-700 dark:text-neutral-300'
-                >
-                    Fill the form
+                <h2 class='mb-8 text-xl font-semibold text-neutral-700'>
+                    Fill the form to schedule your free estimate!
                 </h2>
                 <form>
                     <Form />
                 </form>
             </div>
 
-            <div
-                class='col-span-1 divide-y divide-neutral-300 dark:divide-neutral-700'
-            >
+            <div class='col-span-1 divide-y divide-neutral-300'>
                 <ContactIconBlock
                     heading='Business Hours'
                     content='Monday - Friday: 8:00 AM - 5:00 PM \n Saturday: 9:00 AM - 12:30 PM \n Sunday: Closed'

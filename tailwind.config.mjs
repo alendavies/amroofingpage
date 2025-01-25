@@ -7,7 +7,6 @@ export default {
     "./node_modules/flyonui/dist/js/*.js",
     "../path/to/raty-js/**/*.js",
   ],
-  darkMode: "class",
   theme: {
     colors: {
       blue: "#3b769b",
