@@ -1,7 +1,6 @@
 ---
 import ContactIconBlock from '@components/ui/blocks/ContactIconBlock.astro';
-import Form from '@components/sections/free_estimate/Form.astro';
-import TestForm from './test_form.astro';
+import Form from '@components/sections/free_estimate/Form.html';
 
 const title: string = 'Request Your Free Estimate';
 const subTitle: string =
@@ -25,9 +24,7 @@ const subTitle: string =
                 <h2 class='mb-8 text-xl font-semibold text-neutral-700'>
                     Fill the form to schedule your free estimate!
                 </h2>
-                <form>
-                    <TestForm />
-                </form>
+                <Form />
             </div>
 
             <div class='col-span-1 divide-y divide-neutral-300'>
