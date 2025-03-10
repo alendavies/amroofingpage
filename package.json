@@ -25,7 +25,7 @@
     "@preline/tabs": "^2.6.0",
     "@radix-ui/react-slot": "^1.1.1",
     "@tailwindcss/vite": "^4.0.0",
-    "@types/react": "^19.0.8",
+    "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.3",
     "astro": "^5.4.1",
     "astro-compressor": "^1.0.0",
